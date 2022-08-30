@@ -1,4 +1,8 @@
 <script>
+  import { initializeApp } from "firebase/app";
+  import { config } from "../config";
+
+  const app = initializeApp(config);
   import P5 from "p5-svelte";
   const clickedRun = () => {
     for (let i = 0; i < nodes.length; i++) {
